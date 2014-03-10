@@ -1,3 +1,6 @@
+<?php
+require("global.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,11 +38,16 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="/">Главная</a></li>
-          <li><a href="/">О TED и TEDx</a></li>
-          <li><a href="/">Прошедшие мероприятия</a></li>
-          <li><a href="/">Партнеры</a></li>
-          <li><a href="/">Команда</a></li>
+        <?php
+        foreach ($menuitem as $key => $item){
+            $li = "<li";
+            if ( $key == $currentmenuitem) {
+                $li = $li.' class = "active"';
+            }
+            $li = $li.">";
+            echo $li.$item."</li>";
+        }
+        ?>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
