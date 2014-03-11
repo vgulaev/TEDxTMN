@@ -20,10 +20,12 @@ require("global.php");
 <header style = "border-top: solid 15px #EB392E;">
 </header>
 <div id = "logo" class="container">
-<span class = "tedxred">TED</span>
-<span class = "tedxx">X</span>
+<!--span class = "tedxred">TED</span>
+<span class = "tedxred"></span>
+<span class = "tedxx">X</span-->
+<span class = "tedxred">TMN</span>
 <span class = "tedxblack">Tyumen</span>
-<p><span style = "color: #ff2b06; font-weight: bold;">x</span><span style = "font-weight: bold;">=independently organized TED event</span></p>
+<p><span style = "color: #ff2b06; font-weight: bold;">x</span><span style = "font-weight: bold;">=independently organized TMN event</span></p>
 </div>
   <div class="navbar navbar-inverse" role="navigation">
     <div class="container">
