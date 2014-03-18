@@ -1,7 +1,16 @@
+p {
+    text-align: justify;
+    font-size: 16px;
+}
 .tedxblack {
     font-family: Helvetica;
     font-size: 40px;
 }
+.tedxredcolor {
+    color: #ff2b06;
+    font-weight: bold;
+}
+
 .tedxred {
     color: #ff2b06;
     font-family: Helvetica;
