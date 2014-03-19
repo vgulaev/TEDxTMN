@@ -9,6 +9,36 @@ require("head.php");
 	<tbody>
 		<tr>
 			<td>
+				<img src="img\team\grosheva.jpg">
+			</td>
+			<td style="padding-left: 50px;">
+				<p style="font-weight: bold;">ГРОШЕВА ЮЛИЯ</p>
+				<p>вопросы спонсорского участия и стратегического партнерства</p>
+				<p><a href="mailto:fondshedevr@yandex.ru">fondshedevr@yandex.ru</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="img\team\putilcheva.jpg">
+			</td>
+			<td style="padding-left: 50px;">
+				<p style="font-weight: bold;">ПУТИЛЬЦЕВА ЕЛЕНА</p>
+				<p>вопросы спонсорского участия и стратегического партнерства</p>
+				<p><a href="mailto:fondshedevr@yandex.ru">fondshedevr@yandex.ru</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="img\team\shevchik.jpg">
+			</td>
+			<td style="padding-left: 50px;">
+				<p style="font-weight: bold;">ШЕВЧИК ТАТЬЯНА</p>
+				<p>общие и организационные вопросы</p>
+				<p><a href="mailto:fondshedevr@yandex.ru">fondshedevr@yandex.ru</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
 				<img src="img\team\gulyaev.jpg">
 			</td>
 			<td style="padding-left: 50px;">
@@ -19,12 +49,6 @@ require("head.php");
 		</tr>
 	</tbody>
 </table>
-<ul>
-<li>Грошева Юлия</li>
-<li>Путильцева Елена</li>
-<li>Шевчик Татьяна</li>
-<li>Гуляев Валентин</li>
-<ul>
 </div>
 
 <?php
