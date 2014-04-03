@@ -4,6 +4,7 @@ require("head.php");
 ?>
 
 <div id = "maincontainer" class="container">
+<p><a href="guides.php">TEDx по-русски или руководства для организаторов</a></p>
 <p>TEDTalks которые нас вдохновляют:</p>
 <p><a href="http://www.ted.com/talks/richard_st_john_s_8_secrets_of_success">Ричад Джонсон - 8 секретов успеха</a></p>
 <p><a href="http://www.ted.com/talks/derek_sivers_how_to_start_a_movement">Дерек Сильвер - Как создать движение</a></p>
