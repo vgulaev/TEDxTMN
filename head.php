@@ -10,9 +10,9 @@ require("global.php");
   <meta debug = "just for pleasure">
   <title>TEDxTMN</title>
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="/tedxtmn.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="/tedxtmn.css">
   <script src="//code.jquery.com/jquery-1.9.1.js"></script>
   <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 </head>
