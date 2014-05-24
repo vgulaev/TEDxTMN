@@ -13,7 +13,7 @@ require("head.php");
 <table style="table-layout: fixed; width: 100%">
 	<tbody>
 	<tr>
-		<td style="font-size: 32px;"><span class = "tedxredcolor">TEDx</span>TMN</td>
+		<td style="font-size: 32px;"><span class = "tedxredcolor">TEDx</span>TuraRiver</td>
 		<td style="text-align: right; font-size: 18px;"><a href="/speakersandthemes.php" class="tedxredcolor">Спикеры и темы</a></td>
 	</tr>
 	<tr>
