@@ -14,14 +14,14 @@ function deviceMotionHandler(eventData) {
     info = info.replace("abs", abs)
     
     if (abs > 2) {
-        document.getElementById("moAccel").innerHTML = "shake";
+        //document.getElementById("moAccel").innerHTML = "shake";
         angular.element($("#myGC")).scope().rnd();
         angular.element($("#myGC")).scope().$apply();
     }
     else
     {
         angular.element($("#myGC")).scope().rnd();
-        document.getElementById("moAccel").innerHTML = "calm"; 
+        //document.getElementById("moAccel").innerHTML = "calm"; 
     }
 }
 
@@ -36,22 +36,35 @@ function rndint(r) {
 
 function GreetingController($scope){
     $scope.greeting = 'Hola!';
-    $scope.tables = {};
+    $scope.tables = [
+    {"name" : "стол №1", 
+    "count" : 5,
+    "guests" : []
+    },
+    {"name" : "стол №2", 
+    "count" : 7,
+    "guests" : []
+    } 
+    ];
     $scope.guests = ["Татьяна Евдокимовна","Надежда Степановна","Чешаевы Андрей","Чешаевы Ольга","Чешаевы Марина","Чешаевы Саша","Василий Степанович","Инна Захаровна","Дудина Ангелина","Дудин Владимир","Дудин Коля","Дудина Соня","Татьяна","Валентин","Шевчик Катя","Шевчик Ваня","Владимир Степанович","Наталья Александровна","Ида Викторовна","Низамов Александр","Низамова Елена","Низамов Вова","Шевчик Анна","Шевчик Максим","Казакевич Ирина Александровна","Казакевич Владимир Андреевич","Маша","Александра Евдокимовна","Шевцов Юрий","Шевцова Оксана","Шевцов Сергей","Шевцова Татьяна","Шевцова Алена","Шевцова Вероника","Анна Евдокимовна","Кондырев Андрей","Кондырева Галина","Кондырев Олег","Кондырева Наталья","Любовь Евдокимовна","Осеева Оксана","Осеев Денис","Навалихин Эдик","Помазкина Валентина Демьяновна","Помазкин Виктор Васильевич","Помазкина Алена","Помазкин Сергей","Помазкина Вера","Помазкина Маша","Колесникова Лидия Демьяновна","Колесников Александр Михайловна","Шевчик Галина","Зотов Надежда Васильевна","Зотов Сергей","Зотова Елена","Томашук Владимир Иванович","Томашук Ирина","Котюх Василий Яковлевич","Котюх Тамара Борисовна","Нина Митрофановна","Любовь Васильевна","Валентина Николаевна","Елена Войнова","Огаркова Мария","Огарков Владимир","Огарков Эдуард","Подруга Эдуарда","Бычков Иван Кириллович","Бычкова Зинаида Дмитриевна"];
-    $scope.gs = [];
+    //$scope.gs = [];
     $scope.alert = function () {
         alert("RRRRRR");
     }
     $scope.rnd = function () {
         $scope.greeting = 'Yes!';
-        $scope.gs = [];
+        //$scope.gs = [];
         var clguests = $scope.guests.slice(0);
         var curi = 0;
-        for (var i =  2; i >= 0; i--) {
-            curi = rndint(clguests.length);
-            $scope.gs.push(clguests[curi]);
-            clguests.slice(curi, 1);
+        for (e in $scope.tables) {
+            $scope.tables[e].guests = [];
+            for (var i =  $scope.tables[e].count; i >= 0; i--) {
+                curi = rndint(clguests.length);
+                $scope.tables[e].guests.push(clguests[curi]);
+                clguests.slice(curi, 1);
+            };
         };
+        //$scope.$apply();
         //$scope.$apply(function() { });
     }
     //$scope.rnd();
