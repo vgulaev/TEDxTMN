@@ -14,10 +14,12 @@ require("head.php");
 	<tbody>
 	<tr>
 		<td style="font-size: 32px;"><span class = "tedxredcolor">TEDx</span>TuraRiver</td>
-		<td style="text-align: right; font-size: 18px;"><a href="/speakersandthemes.php" class="tedxredcolor">Спикеры и темы</a></td>
+		<td style="text-align: right; font-size: 18px;">
+            <a href="/speakersandthemes.php" class="tedxredcolor">Спикеры и темы</a>
+        </td>
 	</tr>
 	<tr>
-		<td style="font-size: 32px;">12 февраля 2015</td>
+		<td style="font-size: 32px;">23 мая 2015 в 12-00</td>
 		<td></td>
 	</tr>		
 	</tbody>
