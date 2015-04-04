@@ -17,14 +17,12 @@ require("head.php");
 		<td style="text-align: right; font-size: 18px;">
             <a href="/speakersandthemes.php" class="tedxredcolor">Спикеры и темы</a>
         </td>
-        <td style="text-align: right; font-size: 18px;">
-            <span class = "tedxredcolor">Регистрация</span>
-        </td>
 	</tr>
 	<tr>
 		<td style="font-size: 32px;">23 мая 2015 в 12-00</td>
-		<td></td>
-        <td></td>
+        <td style="text-align: right; font-size: 18px;">
+            <span class = "tedxredcolor">Регистрация</span>
+        </td>
 	</tr>		
 	</tbody>
 </table>
