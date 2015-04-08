@@ -21,7 +21,7 @@ require("head.php");
 	<tr>
 		<td style="font-size: 32px;">23 мая 2015 в 12-00</td>
         <td style="text-align: right; font-size: 18px;">
-            <span class = "tedxredcolor">Регистрация</span>
+            <a href="/jointoevent.php" class="tedxredcolor">Регистрация</a>
         </td>
 	</tr>		
 	</tbody>
