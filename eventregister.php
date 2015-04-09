@@ -14,7 +14,6 @@ if (mysqli_connect_errno()) {
 //$result2 = $mysqli->query( "INSERT INTO userinv (surname, name, email, phone)
 //VALUES('bdd','gdfg', 'dvgsgds', 'dsgsgsg')" ); 
 $mysqli->commit();
-//$mysqli->
 //$mysqli->('userinv');
 //$mysqli->query("use userinv")
 //echo( $mysqli->query('select * from userinv') );
