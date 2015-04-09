@@ -3,10 +3,6 @@ $currentmenuitem = "3";
 require("head.php");
 ?>
 
-<?php
-$mysqli = new mysqli( 'localhost', 'root', '' );
-?>
-
 <div id = "maincontainer" class="container">
     <div>
         <form action="eventregister.php" method="post">
@@ -14,25 +10,25 @@ $mysqli = new mysqli( 'localhost', 'root', '' );
                 <tr>
                     <td>Фамилия:</td>
                     <td>
-                        <input id = "surname"/>
+                        <input name = "surname"/>
                     </td>
                 </tr>
                 <tr>
                     <td>Имя:</td>
                     <td>
-                    <input id = "name"/>
+                    <input name = "name"/>
                     </td>
                 </tr>
                 <tr>
                     <td>e-mail:</td>
                     <td>
-                        <input id = "email"/>
+                        <input name = "email"/>
                     </td>
                 </tr>
                 <tr>
                     <td>телефон:</td>
                     <td>
-                        <input id = "phone"/>
+                        <input name = "phone"/>
                     </td>
                 </tr>
                 <tr>
