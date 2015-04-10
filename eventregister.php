@@ -14,6 +14,7 @@ if (mysqli_connect_errno()) {
 //$result2 = $mysqli->query( "INSERT INTO userinv (surname, name, email, phone)
 //VALUES('bdd','gdfg', 'dvgsgds', 'dsgsgsg')" ); 
 $mysqli->commit();
+//$mysqli->
 //$mysqli->('userinv');
 //$mysqli->query("use userinv")
 //echo( $mysqli->query('select * from userinv') );
@@ -26,14 +27,6 @@ if (isset($_POST['email'])) { $email = $_POST['email'];
     if ($email == '') { unset($email);} }
 if (isset($_POST['phone'])) { $phone=$_POST['phone'];
     if ($phone =='') { unset($phone);} }
-//echo($surname)
-//Проверка на заполненность полей
-$w = '';
-$q = '';
-if (empty($surname) or empty($name) or empty($email) or empty($phone))
-{
-    $w = "Пожалуйста, заполните все поля";
-}
 //Нейтрализация тэгов и скриптов, а так же удаление лишних пробелов
 $surname = stripslashes($surname);
 $surname = htmlspecialchars($surname);
@@ -47,20 +40,22 @@ $surname = trim($surname);
 $name = trim($name);
 $email = trim($email);
 $phone = trim($phone);
-
+//Проверка на заполненность полей
+$w = '';
+$q = '';
+if (empty($surname) or empty($name) or empty($email) or empty($phone))
+{
+    $w = "Пожалуйста, заполните все поля";
+}
+else{
 //Проверка на существование такого же участника
 //$result = $mysqli->query("SELECT 'id' FROM userinv
 //WHERE (surname='$surname', name='$name', email='$email', phone='$phone')");
 $result = $mysqli->query("SELECT 'id' FROM userinv WHERE (email='$email')");
-$myrow = mysql_fetch_array($result);
-//echo($myrow[0]);
-echo(!empty($myrow));
-if (!empty($myrow)) {
-    echo(3);
-    $q = "Такой участник уже зарегестрирован.";
+if ( $row = $result->fetch_row() ) {
+    echo( "Участник с таким email уже зарегестрирован." );
 }
-else
-{
+else {
 // Регистрация
     $result2 = $mysqli->query( "INSERT INTO userinv (surname, name, email, phone)
     VALUES('$surname','$name', '$email', '$phone')" );
@@ -71,12 +66,11 @@ if ($result2=='TRUE')
 }
 else {
     if ($w ==''){
-    $w = "Ошибка. ";
+    $w = "Ошибка.";
 }
 }
 }
-//$result->close();
-
+}
 ?>
     <div id = "maincontainer" class="container">
         <p>
