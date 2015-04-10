@@ -1,6 +1,5 @@
 <?php
-require("sett.php")
-$mysqli = new mysqli( dbs, dbl, dbp );
+$mysqli = new mysqli( 'localhost', 'root', 'rootpass' );
 
 $mysqli->query("CREATE DATABASE IF NOT EXISTS tedxtura");
 $mysqli->query("CREATE TABLE IF NOT EXISTS userinv (
