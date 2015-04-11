@@ -13,7 +13,8 @@ if (mysqli_connect_errno()) {
 <div id = "maincontainer" class="container">
     <p>
     <table border=3 style="table-layout: fixed; width: 100%" rules="all">
-        <?$result = $mysqli->query("select * from userinv;");
+        <?php
+	$result = $mysqli->query("select * from userinv;");
         while ($row = $result->fetch_row()) {
             echo("<tr>");
             echo '<td width="5%"  align="center">'.$row[0].'</td>';
