@@ -24,6 +24,12 @@ require("head.php");
             <a href="/jointoevent.php" class="tedxredcolor">Регистрация</a>
         </td>
 	</tr>		
+	<tr>
+        <td style="font-size: 32px;"></td>
+        <td style="text-align: right; font-size: 18px;">
+            <a href="/invited.php" class="tedxredcolor">Список участников</a>
+        </td>
+    </tr>
 	</tbody>
 </table>
 <hr>

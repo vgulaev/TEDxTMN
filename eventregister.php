@@ -53,7 +53,7 @@ else{
 //WHERE (surname='$surname', name='$name', email='$email', phone='$phone')");
 $result = $mysqli->query("SELECT 'id' FROM userinv WHERE (email='$email')");
 if ( $row = $result->fetch_row() ) {
-    echo( "Участник с таким email уже зарегестрирован." );
+    $w = "Участник с таким email уже зарегестрирован.";
 }
 else {
 // Регистрация
