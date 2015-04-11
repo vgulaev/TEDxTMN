@@ -1,31 +1,18 @@
 <?php
-$currentmenuitem = "3";
+$currentmenuitem = "1";
 require("head.php");
-require("sett.php");
-
-$mysqli = new mysqli( $dbs, $dbl, $dbp, $dbn );
-if (mysqli_connect_errno()) {
-    printf( "Connect failed: %s\n", mysqli_connect_error() );
-    exit();
-}
 ?>
-<br>
+
 <div id = "maincontainer" class="container">
-    <p>
-    <table border=3 style="table-layout: fixed; width: 100%" rules="all">
-        <?php
-	$result = $mysqli->query("select * from userinv;");
-        while ($row = $result->fetch_row()) {
-            echo("<tr>");
-            echo '<td width="5%"  align="center">'.$row[0].'</td>';
-            echo '<td align="center">'.$row[1].'</td>';
-            echo '<td align="center">'.$row[2].'</td>';
-            echo '<td align="center">'.$row[3].'</td>';
-            echo '<td align="center">'.$row[4].'</td>';
-            echo("</tr>");
-        }?>
-    </table>
+<p>TED - это сообщество любознательных людей, увлеченных идеей</p>
+<!--p>14 июня в конференц-зале Областной Думе ТО пройдет первая конференция TEDxTюмень.</p-->
+<p>23 мая 2015 пройдет первая конференция TEDxTюмень.</p>
+<p>Мероприятие будет организовано по лицензии, согласно всем правилам некоммерческого американского Фонда ТЕД, известного всему миру благодаря «идеям, достойным распространения»</p>
+<!--p>7 историй успеха</p>
+<p>150 минут чего то</p>
+<p>Мы расскажем как добиться успеха в Тюмени</p-->
 </div>
+
 <?php
 require("footer.php");
 ?>
