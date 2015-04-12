@@ -16,29 +16,20 @@ if (mysqli_connect_errno()) {
         <?php
         $result = $mysqli->query("select * from userinv;");
         $q=1;
-        $color;
-        echo("<tr bgcolor=".$color.">");
-        echo '<td width="5%"  align="center">'.'№'.'</td>';
-        echo '<td align="center">'.'Участники'.'</td>';
-        echo '<td align="center">'.'Контакты'.'</td>';
+        echo('<tr>');
+        echo '<td style="border-bottom-width: 3px; border-left-width: 3px; border-top-width: 3px;" width="5%"  align="center">'.'№'.'</td>';
+        echo '<td style="border-bottom-width: 3px; border-top-width: 3px;" align="center">'.'Участники'.'</td>';
+        echo '<td style="border-bottom-width: 3px; border-right-width: 3px; border-top-width: 3px;" align="center">'.'Контакты'.'</td>';
         echo("</tr>");
         while ($row = $result->fetch_row()) {
-            if ($q==1){
-                $q=0;
-                $fontcolor="white";
-                $color="333333";}
-            else {
-                $q=1;
-                $fontcolor="black";
-                $color="ff2b06";}
-            echo('<tr style="color: '.$fontcolor.';" bgcolor='.$color.">");
-            echo '<td rowspan="2" width="5%"  align="center">'.$row[0].'</td>';
+            echo('<tr>');
+            echo '<td style="border-bottom-width: 3px; border-left-width: 3px;" rowspan="2" width="5%"  align="center">'.$row[0].'</td>';
             echo '<td align="center">'.$row[1].'</td>';
-            echo '<td align="center">'.$row[3].'</td>';
+            echo '<td align="center" style="border-right-width: 3px;">'.$row[3].'</td>';
             echo("</tr>");
-            echo('<tr style="color: '.$fontcolor.';" bgcolor='.$color.">");
-            echo '<td align="center">'.$row[2].'</td>';
-            echo '<td align="center">'.$row[4].'</td>';
+            echo('<tr style="border-bottom-width: 6px">');
+            echo '<td style="border-bottom-width: 3px;" align="center">'.$row[2].'</td>';
+            echo '<td style="border-bottom-width: 3px; border-right-width: 3px;" align="center">'.$row[4].'</td>';
             echo("</tr>");
         }?>
     </table>
